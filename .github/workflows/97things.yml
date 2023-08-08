@@ -1,8 +1,8 @@
 name: 97things to SNS
 on:
   schedule:
-    # 5分ごとに実行
-    - cron: '0 9-18/3 * * 1-5'
+    # 日本時間、月曜日から金曜日、9時から18時までの3時間おきに実行
+    - cron: '0 0-9/3 * * 1-5'
   workflow_dispatch:
 jobs:
   _97things-to-sns:
